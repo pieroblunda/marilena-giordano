@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Marck+Script&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+nav {
+  background-color: white;
+  height: 60px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+}
+
+nav ul {
+  line-height: 60px;
+  padding: 0 16px;
+}
+
+nav ul li.logo-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li.logo-container img {
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+}
+
+nav ul li.logo-container h2 {
+  font-size: 18px;
+  line-height: 20px;
+  color: #004A6A;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+  
+nav ul li.logo-container span {
+  display: block;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+nav ul li:not(.logo-container) {
+  padding: 0 16px;
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+section {
+  padding: 32px;
+}
+
+section.neck {
+  background-color: gray;
+  min-height: 60vh;
+  background:linear-gradient(0deg, #ffffffcc, #ffffffcc), url('assets/images/neck.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+section.neck > div {
+  width: 100%;
+  align-items: center;
+}
+
+section.neck > div .text-wrapper small {
+  display: block;
+  font-size: 60%;
+  font-weight: 300;
+}
+
+section.neck > div .btn-wrapper {
+  text-align: center;
+}
+
+section.neck .flex-container {
+  min-height: 60vh;
+  justify-content: left;
+  align-items: center;
+}
+
+section.neck .text-wrapper a {
+  background-color: #c8eaee;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #1b4967;
+  display: inline-block;
+}
+
+section.quando {
+  flex-direction: column-reverse;
+}
+
+section.ambito-intervento {
+  background: url('assets/images/background-line-pink.png');
+  background-repeat: no-repeat;
+  background-position: -30% center;
+  background-size: 50%; 
+}
+
+section.lo-studio .text-wrapper {
+  width: 100;
+  text-align: center;
+}
+
+section.lo-studio .img-wrapper {
+  gap: 8px;
+}
+
+section.lo-studio .img-wrapper img {
+  flex: 1;
+  width: 18%;
+}
+
+section.lo-studio address {
+  padding: 30px;
+  color: #666;
+  text-align: center;
+}
+
+section.lo-studio .col:first-child {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+section.blockquote {
+  margin: 64px 0;
+  padding: 0 64px;
+  background-color: rgba(219, 194, 228, 0.59);
+}
+
+section.blockquote .img-shadow {
+  text-align: center;
+}
+
+section.blockquote img {
+  width: 60%;
+  margin-top: -64px;
+  margin-bottom: -64px;
+  border: 8px solid rgb(165, 133, 179);
+}
+
+section.blockquote blockquote {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(112, 87, 124);
+  margin: 64px 0;
+}
+
+section.blockquote blockquote sub {
+  display: block;
+  font-size: 4rem;
+  margin-bottom: -30px;
+}
+
+section.blockquote blockquote cite {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  font-style: italic;
+}
+
+section.blockquote blockquote cite:before {
+  content: "-";
+  margin-right: 16px;
+}
+
+section.contatti .d-flex {
+  gap: 16px;
+}
+
+section.contatti h1 {
+  text-align: center;
+}
+
+section.contatti ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+section.contatti li {
+  margin: 0;
+  padding: 0;
+}
+
+section.contatti .colloquo-su-appuntamento {
+  font-style: italic;
+  color: #1b4967;
+}
+
+footer {
+  background-color: #1d4967;
+  color: #fff;
+  height: 80px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+footer ul li {
+  line-height: 80px;
+  padding: 0 32px;
+}
+
+.font-mark-script {
+  font-family: 'Marck Script', cursive;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-flex .col {
+  flex: 0 1 auto;
+}
+
+.text-wrapper {
+  height: fit-content;
+}
+
+.text-wrapper h1,
+.text-wrapper h2,
+.text-wrapper h3.h2 {
+  color: #1b4967;
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.text-wrapper p {
+  color: #404040;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.w-1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.w-870 {
+  max-width: 870px;
+  margin: 0 auto;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  
+  nav ul li:not(.logo-container) {
+    padding: 0 16px;
+    display: list-item;
+  }
+
+  section {
+    padding: 64px;
+  }
+  
+  section.neck > div .text-wrapper {
+    max-width: 40%;
+  }
+  
+  section.neck > div .btn-wrapper {
+    text-align: left;
+  }
+  
+  section.quando {
+    flex-direction: row;
+  }
+  
+  section.contatti .col:first-child {
+    text-align: right;
+  }
+  
+  section.blockquote blockquote {
+    margin: 32px 0;
+  }
+  
+  .d-flex .col {
+    flex: 1;
+  }
+  
+  .text-wrapper h1,
+  .text-wrapper h2,
+  .text-wrapper h3.h2 {
+    text-align: left;
+  }
+}
