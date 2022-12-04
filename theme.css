@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Marck+Script&display=swap');
 
+html {
+  font-size: 36px;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 
 nav {
   background-color: white;
-  height: 60px;
+  /* height: 60px; */
+  height: 10vh;
+  min-height: 80px;
 }
 
 nav ul {
@@ -17,11 +25,18 @@ nav ul {
   list-style-type: none;
   display: flex;
   height: 100%;
-}
-
-nav ul {
   line-height: 60px;
   padding: 0 16px;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li:not(.logo-container) {
+  padding: 0 16px;
+  display: none;
 }
 
 nav ul li.logo-container {
@@ -31,35 +46,31 @@ nav ul li.logo-container {
 }
 
 nav ul li.logo-container img {
-  width: 50px;
-  height: 50px;
-  margin-right: 8px;
+  height: 80%;
+  width: auto;
+  margin-right: 16px;
 }
 
 nav ul li.logo-container h2 {
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
   color: #004A6A;
+}
+
+nav ul li.logo-container small {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #000;
 }
-  
-nav ul li.logo-container span {
-  display: block;
-  font-size: 12px;
-  line-height: 12px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
 
-nav ul li:not(.logo-container) {
-  padding: 0 16px;
-  display: none;
-}
 
 img {
   width: 100%;
@@ -75,11 +86,12 @@ section {
 
 section.neck {
   background-color: gray;
-  min-height: 60vh;
+  min-height: 40vh;
   background:linear-gradient(0deg, #ffffffcc, #ffffffcc), url('assets/images/neck.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
+  padding: 64px;
 }
 
 section.neck > div {
@@ -91,6 +103,10 @@ section.neck > div .text-wrapper small {
   display: block;
   font-size: 60%;
   font-weight: 300;
+}
+
+section.neck .btn-wrapper h1 {
+  margin: 32px 0;
 }
 
 section.neck > div .btn-wrapper {
@@ -196,7 +212,7 @@ section.contatti .d-flex {
   gap: 16px;
 }
 
-section.contatti h1 {
+section.contatti h2 {
   text-align: center;
 }
 
@@ -257,7 +273,6 @@ footer ul li {
 .text-wrapper h3.h2 {
   color: #1b4967;
   font-size: 2rem;
-  margin: 0;
   text-align: center;
 }
 
@@ -282,9 +297,14 @@ footer ul li {
 
 @media screen and (min-width: 1024px) {
   
+  html {
+    font-size: 14px;
+  }
+  
   nav ul li:not(.logo-container) {
     padding: 0 16px;
-    display: list-item;
+    display: flex;
+    font-size: 16px;
   }
 
   section {
