@@ -309,7 +309,7 @@ section > h2,
   display: inline-flex;
   color: white;
 }
-i {
+.btn-whatsApp i {
   width: 100%;
   background-color: #fff;
   mask: url(./assets/images/whatsapp.svg) no-repeat center / contain;
