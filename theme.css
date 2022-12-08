@@ -209,11 +209,6 @@ section.blockquote blockquote cite {
   font-style: italic;
 }
 
-section.blockquote blockquote cite:before {
-  content: "-";
-  margin-right: 16px;
-}
-
 section.contatti .d-flex {
   gap: 16px;
 }
@@ -300,6 +295,24 @@ section > h2,
 
 .bold {
   font-weight: 700;
+}
+
+.btn-whatsApp {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  padding: 16px;
+  background-color: #25d366;
+  border-radius: 50%;
+  right: 30px;
+  bottom: 30px;
+  display: inline-flex;
+  color: white;
+}
+i {
+  width: 100%;
+  background-color: #fff;
+  mask: url(./assets/images/whatsapp.svg) no-repeat center / contain;
 }
 
 @media screen and (min-width: 1024px) {
